@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="wrapper">
+        <div class="header_content">
+          <div class="gap img">
+            <img src="./img/book.png" alt="book" srcset="" />
+          </div>
+          <div class="gap title">
+            <h1>Dictionary</h1>
+          </div>
+          <div class="gap Typography">
+            <h3>Find meanings and save for quick reference</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="input-area">
+        <input
+          maxlength="49"
+          type="text"
+          class="input_box hidden"
+          autocomplete="off"
+          value=""
+          id="txtSearchBox"
+          name="term"
+        />
+        <input
+          maxlength="49"
+          type="text"
+          class="input_box hidden"
+          autocomplete="off"
+          value=""
+          id="txtSearchBox_vi"
+          name="term"
+        />
+        <input
+          maxlength="49"
+          type="text"
+          class="input_box"
+          autocomplete="off"
+          value=""
+          id="txtSearchBox_en_en"
+          name="term"
+        />
+        <select id="searchOptions" class="options">
+          <option value="">Anh - Việt</option>
+          <option value="_vi">Việt - Anh</option>
+          <option selected value="_en_en">Anh - Anh</option>
+        </select>
+        <a href="javascript:;" id="search">Tra từ</a>
+      </div>
+      <div class="slide-show">
+        <div class="world">
+          <h2 class="show">
+            Hello
+            <span class="color-black">/hə'ləʊ/</span>
+          </h2>
+          <div class="show">
+              <i class="fas fa-volume-up">US</i>
+            <a href="" class="sp-us">
+            </a>
+          </div>
+          <span id="sound">
+            <audio preload="auto" autobuffer="">
+              <source
+                src="https://stream-dict-laban.zdn.vn/uk/aa65268e10becb29f08ec1d917e2f6fd/183cc8c1ad0/C/class.mp3"
+              /></audio
+          ></span>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </body>
+</html>
